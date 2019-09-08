@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name = "items" class="in.co.javacoder.springcore.assignmentone.Item" p:id="67" 
+      p:name = "Moto E4 Plus" p:price="9999" p:quantity="50"/>
+    <bean name ="cart" class="in.co.javacoder.springcore.assignmentone.ShoppingCart" p:items-ref="items">
+    </bean>
+    	
+
+</beans>
